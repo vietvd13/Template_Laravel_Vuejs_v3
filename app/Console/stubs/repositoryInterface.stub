@@ -1,0 +1,13 @@
+<?php
+/**
+ * Created by VeHo.
+ * Year: DummyDate
+ */
+
+namespace DummyNamespace;
+
+
+interface DummyClass extends BaseRepositoryInterface
+{
+    //
+}

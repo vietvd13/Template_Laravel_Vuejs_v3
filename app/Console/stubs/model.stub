@@ -1,0 +1,28 @@
+<?php
+/**
+ * Created by VeHo.
+ * Year: DummyDate
+ */
+
+namespace DummyNamespace;
+
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\SoftDeletes;
+
+class DummyClass extends Model
+{
+    use HasFactory;
+    use SoftDeletes;
+
+    protected $table = 'DummyTable';
+
+    protected $fillable = [];
+
+    protected $dates = ['deleted_at'];
+
+    protected $casts = [
+        'data' => 'array'
+    ];
+
+}

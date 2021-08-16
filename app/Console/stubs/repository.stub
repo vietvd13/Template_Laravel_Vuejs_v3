@@ -1,0 +1,36 @@
+<?php
+/**
+ * Created by VeHo.
+ * Year: DummyDate
+ */
+
+namespace Repository;
+
+use App\Models\DummyModel;
+use App\Repositories\Contracts\DummyClassI;
+use Repository\BaseRepository;
+use Illuminate\Foundation\Application;
+use Illuminate\Support\Facades\Auth;
+
+class DummyClass extends BaseRepository implements DummyClassI
+{
+
+     public function __construct(Application $app)
+     {
+         parent::__construct($app);
+
+     }
+
+    /**
+       * Instantiate model
+       *
+       * @param DummyModel $model
+       */
+
+    public function model()
+    {
+        return DummyModel::class;
+    }
+
+
+}
